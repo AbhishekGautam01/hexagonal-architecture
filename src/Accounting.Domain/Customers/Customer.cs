@@ -22,10 +22,10 @@ namespace Accounting.Domain.Customers
 
         private AccountCollection _accounts;
 
-        public Customer(Aadhar ssn, Name name)
+        public Customer(Aadhar aadhar, Name name)
         {
             Id = Guid.NewGuid();
-            Aadhar = ssn;
+            Aadhar = aadhar;
             Name = name;
             _accounts = new AccountCollection();
         }
