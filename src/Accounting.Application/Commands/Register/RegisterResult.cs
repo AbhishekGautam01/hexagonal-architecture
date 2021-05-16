@@ -29,7 +29,7 @@ namespace Accounting.Application.Commands.Register
             List<AccountResult> accountResults = new List<AccountResult>();
             accountResults.Add(Account);
 
-            Customer = new CustomerResult(customer.Id, customer.SSN, customer.Name, accountResults);
+            Customer = new CustomerResult(customer.Id, customer.Aadhar, customer.Name, accountResults);
         }
     }
 }
