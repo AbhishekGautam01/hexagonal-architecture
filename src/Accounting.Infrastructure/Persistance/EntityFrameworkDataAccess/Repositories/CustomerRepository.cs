@@ -22,7 +22,7 @@
             {
                 Id = customer.Id,
                 Name = customer.Name,
-                SSN = customer.Aadhar
+                Aadhar = customer.Aadhar
             };
 
             await _context.Customers.AddAsync(customerEntity);
@@ -43,7 +43,7 @@
             foreach (var accountId in accounts)
                 accountCollection.Add(accountId);
 
-            return Customer.Load(customer.Id, customer.Name, customer.SSN, accountCollection);
+            return Customer.Load(customer.Id, customer.Name, customer.Aadhar, accountCollection);
         }
 
         public async Task Update(Customer customer)
@@ -52,7 +52,7 @@
             {
                 Id = customer.Id,
                 Name = customer.Name,
-                SSN = customer.Aadhar
+                Aadhar = customer.Aadhar
             };
 
             _context.Customers.Update(customerEntity);

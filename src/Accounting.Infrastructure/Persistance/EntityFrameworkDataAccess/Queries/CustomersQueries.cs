@@ -44,7 +44,7 @@
             }
 
             CustomerResult customerResult = new CustomerResult(
-                customer.Id, customer.Name, customer.SSN,
+                customer.Id, customer.Name, customer.Aadhar,
                 accountsResult);
 
             return await Task.FromResult<CustomerResult>(customerResult);

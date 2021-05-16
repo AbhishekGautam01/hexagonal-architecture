@@ -1,4 +1,4 @@
-﻿namespace Accounting.Infrastructure.EntityFrameworkDataAccess.Entities
+﻿namespace Accounting.Infrastructure.DapperDataAccess.Entities
 {
     using System;
 
