@@ -16,8 +16,4 @@
     <ProjectReference Include="..\Accounting.Domain\Accounting.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Modules\" />
-  </ItemGroup>
-
 </Project>
