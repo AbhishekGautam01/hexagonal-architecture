@@ -4,4 +4,12 @@
     <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Commands\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Accounting.Domain\Accounting.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
