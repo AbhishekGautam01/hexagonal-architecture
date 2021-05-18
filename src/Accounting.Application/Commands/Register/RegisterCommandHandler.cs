@@ -20,12 +20,12 @@ namespace Accounting.Application.Commands.Register
             this.accountWriteOnlyRepository = accountWriteOnlyRepository;
         }
 
-        public async Task<RegisterResult> Execute(RegisterCommand register)
+        public async Task<RegisterResult> Execute(RegisterCommand command)
         {
-            Customer customer = new Customer(register.Pin, register.Name);
+            Customer customer = new Customer(command.Pin, command.Name);
 
             Account account = new Account(customer.Id);
-            account.Deposit(register.InitialAmount);
+            account.Deposit(command.InitialAmount);
             Credit credit = (Credit)account.GetLastTransaction();
 
             customer.Register(account.Id);

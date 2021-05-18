@@ -1,0 +1,16 @@
+﻿{
+  "defaultAssembly": "Accounting.Infrastructure",
+  "modules": [
+    {
+      "type": "Accounting.Infrastructure.Modules.ApplicationModule",
+      "properties": {
+      }
+    },
+    {
+      "type": "Accounting.Infrastructure.Persistance.DapperDataAccess.Module",
+      "properties": {
+        "ConnectionString": "Server=(LocalDB)\\MSSQLLocalDB;Database=AccountingDb;Integrated Security=true;"
+      }
+    }
+  ]
+}

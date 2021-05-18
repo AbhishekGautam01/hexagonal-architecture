@@ -1,0 +1,16 @@
+﻿{
+  "defaultAssembly": "Accounting.Infrastructure",
+  "modules": [
+    {
+      "type": "Accounting.Infrastructure.Persistance.Modules.ApplicationModule",
+      "properties": {}
+    },
+    {
+      "type": "Accounting.Infrastructure.Persistance.MongoDataAccess.Module",
+      "properties": {
+        "ConnectionString": "mongodb://10.0.75.1:27017",
+        "DatabaseName": "Acerola-V01"
+      }
+    }
+  ]
+}

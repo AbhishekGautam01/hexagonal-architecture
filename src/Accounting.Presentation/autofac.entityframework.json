@@ -1,0 +1,15 @@
+﻿{
+  "defaultAssembly": "Accounting.Infrastructure",
+  "modules": [
+    {
+      "type": "Acerola.Infrastructure.Modules.ApplicationModule",
+      "properties": {}
+    },
+    {
+      "type": "Accounting.Infrastructure.Persistance.EntityFrameworkDataAccess.Module",
+      "properties": {
+        "ConnectionString": "Server=(LocalDB)\\MSSQLLocalDB;Database=AcerolaDb;Integrated Security=true;"
+      }
+    }
+  ]
+}
